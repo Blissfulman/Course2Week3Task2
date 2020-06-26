@@ -35,6 +35,7 @@
 		74012C59201F7AED007ADE9C /* CustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74012C58201F7AED007ADE9C /* CustomFlowLayout.swift */; };
 		74012C5C201F7D1F007ADE9C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74012C5A201F7D1F007ADE9C /* PhotoCollectionViewCell.swift */; };
 		74012C5D201F7D1F007ADE9C /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74012C5B201F7D1F007ADE9C /* PhotoCollectionViewCell.xib */; };
+		CE72FB1F24A5175800CB69F9 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE72FB1E24A5175800CB69F9 /* PhotoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		74012C58201F7AED007ADE9C /* CustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFlowLayout.swift; sourceTree = "<group>"; };
 		74012C5A201F7D1F007ADE9C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		74012C5B201F7D1F007ADE9C /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		CE72FB1E24A5175800CB69F9 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				74CB509620206622004C1D14 /* Don't change */,
 				74012C29201F5717007ADE9C /* Main.storyboard */,
 				74012C2D201F577B007ADE9C /* TableViewController.swift */,
+				CE72FB1E24A5175800CB69F9 /* PhotoTableViewCell.swift */,
 				74012C2F201F5790007ADE9C /* CollectionViewController.swift */,
 				74012C58201F7AED007ADE9C /* CustomFlowLayout.swift */,
 			);
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE72FB1F24A5175800CB69F9 /* PhotoTableViewCell.swift in Sources */,
 				74012C32201F5BFC007ADE9C /* Photo.swift in Sources */,
 				74012C34201F61DC007ADE9C /* PhotoProvider.swift in Sources */,
 				74012C30201F5790007ADE9C /* CollectionViewController.swift in Sources */,
