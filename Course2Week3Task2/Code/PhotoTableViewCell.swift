@@ -10,6 +10,10 @@ import UIKit
 
 class PhotoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var picture: UIImageView!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var buttonInfo: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +23,20 @@ class PhotoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    @IBAction func buttonInfoPressed(_ sender: UIButton) {
+        print("Accessory selected")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        label.sizeToFit()
+        
+    }
+    func fillingCell(_ cell: Photo) {
+        picture.image = cell.image
+        label.text = cell.name
     }
 
 }
