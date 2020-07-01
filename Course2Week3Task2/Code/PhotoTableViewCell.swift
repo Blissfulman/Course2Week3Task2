@@ -2,9 +2,6 @@
 //  PhotoTableViewCell.swift
 //  Course2Week3Task2
 //
-//  Created by User on 25.06.2020.
-//  Copyright © 2020 e-Legion. All rights reserved.
-//
 
 import UIKit
 

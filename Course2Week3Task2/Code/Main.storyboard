@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Photos" rowHeight="60" id="2UT-mw-i7f" customClass="PhotoTableViewCell" customModule="Course2Week3Task2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="Photos" rowHeight="60" id="2UT-mw-i7f" customClass="PhotoTableViewCell" customModule="Course2Week3Task2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2UT-mw-i7f" id="Vag-Fv-nr3">
@@ -104,20 +104,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-j8-GaV">
-                                <rect key="frame" x="60" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9iO-j8-GaV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewLayout key="collectionViewLayout" id="M11-us-LR3" customClass="CustomFlowLayout" customModule="Course2Week3Task2" customModuleProvider="target"/>
+                                <collectionViewLayout key="collectionViewLayout" id="GJu-KA-0bT" customClass="CustomFlowLayout" customModule="Course2Week3Task2" customModuleProvider="target"/>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xfL-Tr-t0W" id="4ua-Gj-MBf"/>
+                                    <outlet property="delegate" destination="xfL-Tr-t0W" id="yxa-Ki-2lO"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9iO-j8-GaV" firstAttribute="top" secondItem="ZyR-3J-HmL" secondAttribute="bottom" id="3YS-IC-qWC"/>
+                            <constraint firstItem="hVC-N7-SHc" firstAttribute="top" secondItem="9iO-j8-GaV" secondAttribute="bottom" id="Tzf-eu-nVf"/>
+                            <constraint firstItem="9iO-j8-GaV" firstAttribute="leading" secondItem="b6H-Hc-YTy" secondAttribute="leading" id="VqF-NA-vsa"/>
+                            <constraint firstAttribute="trailing" secondItem="9iO-j8-GaV" secondAttribute="trailing" id="oTl-dv-IcM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoCollectionView" destination="9iO-j8-GaV" id="BBm-eV-S8s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aio-ft-aeO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.04347826086958" y="-418.52678571428572"/>
+            <point key="canvasLocation" x="112.8" y="-418.74062968515744"/>
         </scene>
     </scenes>
     <resources>
